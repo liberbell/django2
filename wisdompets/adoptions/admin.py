@@ -5,4 +5,3 @@ from .models import Pet
 @admin.register(Pet)
 class PetAdmin(admin.ModelAdmin):
     list_display = ['name', 'speices', 'breed', 'age', 'sex']
-    pass
