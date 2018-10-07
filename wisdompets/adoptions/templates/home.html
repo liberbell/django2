@@ -5,9 +5,9 @@
         <h3>{{ pet.name }}</h3>
       </a>
       <p>{{ pet.species }}</p>
-      {% if pet.bread %}
-        <p>Breed: {{ pet.bread }}</p>
-      {% endif %}
+        {% if pet.bread %}
+          <p>Breed: {{ pet.bread }}</p>
+        {% endif %}
       <p class='hidden'>{{ pet.description }}</p>
     </div>
   {% endfor %}
