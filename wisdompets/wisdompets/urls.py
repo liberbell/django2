@@ -6,6 +6,7 @@ from adoptions import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^templates/', views.forms_template, name='forms_template'),
     url(r'^$', views.home, name='home'),
-    url(r'^adoptions/(\d+)', views.pet_detail, name='pet_detail'), 
+    url(r'^adoptions/(\d+)', views.pet_detail, name='pet_detail'),
 ]
