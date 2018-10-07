@@ -16,6 +16,7 @@ def pet_detail(request, id):
         pet = Pet.objects.get(id=id)
     except Pet.DoesNotExist:
         raise Http404('Pet not found')
+    return render(request, 'pet_detail.html')
     # return HttpResponse('<p>pet_detail view wtih the id {}</p>'.format(id))
 
 def forms_template(request):
